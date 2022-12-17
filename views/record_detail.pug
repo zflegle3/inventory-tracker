@@ -1,0 +1,14 @@
+extends layout
+
+block content
+    h1 Title: #{record.title}
+
+    p #[strong Artist:] #{record.artist}
+    p #[strong Description:] #{record.description}
+    p #[strong Format:] #{record.format}
+    p #[strong Release:] #{record.release}
+    p #[strong Rating:] #{record.rating}
+    p #[strong Price:] #{record.price}
+    p #[strong Quantity:] #{record.quantity}
+    p #[strong Genre:]
+    a(href=record.genre[0].url) #{record.genre[0].name}

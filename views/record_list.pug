@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+
+  ul
+    each record in record_list
+      li
+        a(href=record.url) #{record.title}
+        |  (#{record.quantity})
+
+    else
+      li There are no records.
