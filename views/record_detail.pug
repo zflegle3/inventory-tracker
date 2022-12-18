@@ -12,3 +12,12 @@ block content
     p #[strong Quantity:] #{record.quantity}
     p #[strong Genre:]
     a(href=record.genre[0].url) #{record.genre[0].name}
+
+    hr
+    p
+    a(href=record.url+'/delete') Delete record
+        p
+    a(href=record.url+'/update') Update record
+
+
+

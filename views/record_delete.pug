@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    h1 #{title}: #{record.title+" by "+ record.artist}
+
+    p Do you really want to delete this Record?
+
+    form(method='POST' action='')
+      div.form-group
+        input#recordid.form-control(type='hidden',name='recordid', required='true', value=record._id )
+
+      button.btn.btn-primary(type='submit') Delete

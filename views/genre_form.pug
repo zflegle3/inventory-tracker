@@ -10,7 +10,7 @@ block content
 
     div.form-group
       label(for='description') Description:
-      textarea#name.form-control(type='text', placeholder='A breif description about the genre' name='description')
+      textarea#description.form-control(type='text', placeholder='A breif description about the genre' name='description' value=(undefined===genre ? '' : genre.description)) #{undefined===genre ? '' : genre.description}
     button.btn.btn-primary(type='submit') Submit
 
   if errors
